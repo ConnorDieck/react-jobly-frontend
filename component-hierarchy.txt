@@ -1,0 +1,43 @@
+Where should state for jobs and companies be stored? Will company need access to all jobs in order to render a relevant job list?
+
+App
+	Navigator
+		state=jobs, companies
+		getCompanies, getJobs
+
+		CompanyList
+			props=companies
+
+			SearchForm
+				props=search
+			
+			NewCompanyForm
+				state=formData
+				props=addCompany()
+
+			UpdateCompanyForm
+				state=formData
+				props=updateCompany()
+
+			Company
+				props=name, description, jobs
+
+				Job
+					props=name, description, company
+
+		JobList
+			props=jobs
+
+			SearchBar
+				no props or state
+
+			NewJobForm
+				state=formData
+				props=addJob()
+
+			UpdateJobForm
+				state=formData
+				props=updateJob()
+
+			Job
+				props=name, company, salary, equity
