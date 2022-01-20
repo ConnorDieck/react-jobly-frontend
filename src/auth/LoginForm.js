@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import "./authForm.css";
+
 const LoginForm = ({ login }) => {
 	let INITIAL_STATE = {
 		username : "",
@@ -27,26 +29,30 @@ const LoginForm = ({ login }) => {
 	};
 
 	return (
-		<form className="loginForm" onSubmit={handleSubmit}>
-			<label htmlFor="username">Username:</label>
-			<input //
-				id="login_username"
-				name="username"
-				value={fData.username}
-				onChange={handleChange}
-				placeholder="Username"
-			/>
-			<label htmlFor="password">Password:</label>
-			<input //
-				id="login_password"
-				name="password"
-				type="password"
-				value={fData.password}
-				onChange={handleChange}
-				placeholder="Password"
-			/>
-			<button>Login</button>
-		</form>
+		<div className="form-container">
+			<form className="auth-form" onSubmit={handleSubmit}>
+				<label htmlFor="username">Username:</label>
+				<input //
+					id="login_username"
+					name="username"
+					value={fData.username}
+					onChange={handleChange}
+					placeholder="Username"
+					className="styled-input"
+				/>
+				<label htmlFor="password">Password:</label>
+				<input //
+					id="login_password"
+					name="password"
+					type="password"
+					value={fData.password}
+					onChange={handleChange}
+					placeholder="Password"
+					className="styled-input"
+				/>
+				<button>Login</button>
+			</form>
+		</div>
 	);
 };
 
