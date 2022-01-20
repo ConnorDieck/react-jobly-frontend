@@ -32,7 +32,7 @@ const SignupForm = ({ register }) => {
 			<input //
 				id="signup_username"
 				name="username"
-				value={(fData.username = "test")}
+				value={fData.username}
 				onChange={handleChange}
 				placeholder="Username"
 			/>
@@ -41,7 +41,7 @@ const SignupForm = ({ register }) => {
 				id="signup_password"
 				name="password"
 				type="password"
-				value={(fData.password = "test123")}
+				value={fData.password}
 				onChange={handleChange}
 				placeholder="Password"
 			/>
@@ -49,7 +49,7 @@ const SignupForm = ({ register }) => {
 			<input //
 				id="signup_firstName"
 				name="firstName"
-				value={(fData.firstName = "test")}
+				value={fData.firstName}
 				onChange={handleChange}
 				placeholder="First Name"
 			/>
@@ -57,7 +57,7 @@ const SignupForm = ({ register }) => {
 			<input //
 				id="signup_lastName"
 				name="lastName"
-				value={(fData.lastName = "test")}
+				value={fData.lastName}
 				onChange={handleChange}
 				placeholder="Last Name"
 			/>
@@ -65,7 +65,7 @@ const SignupForm = ({ register }) => {
 			<input //
 				id="signup_email"
 				name="email"
-				value={(fData.email = "test@email.com")}
+				value={fData.email}
 				onChange={handleChange}
 				placeholder="Email"
 			/>

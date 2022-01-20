@@ -41,7 +41,7 @@ const LoginForm = ({ login }) => {
 				id="login_password"
 				name="password"
 				type="password"
-				value={(fData.password = "test123")}
+				value={fData.password}
 				onChange={handleChange}
 				placeholder="Password"
 			/>
