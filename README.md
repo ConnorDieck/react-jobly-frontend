@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deployed at:
+
+https://react-jobly-cd.surge.sh/
+
 ## Available Scripts
 
 In the project directory, you can run:
